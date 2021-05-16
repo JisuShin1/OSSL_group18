@@ -124,7 +124,7 @@ void searchName(Book *b, int index){
         Book *book = b + i;
         char *foundName = strstr(book->name, goalname);
         if(foundName!=0){
-            printf("\n검색이 완료되었습니다.\n");
+            printf("\n\n검색이 완료되었습니다.\n");
             printf("%-12s\t%-12s\t%-8s\t%s\t\t%s\n", "이름", "저자", "장르", "대출일", "대출 가능");
             printf("%-12s\t%-12s\t%-8s\t%-10s\t", book->name, book->auth, book->genre, book->borrDate);
 			printf("%s\n", book->borrAble?"대출 불가능":"대출 가능");
@@ -133,7 +133,7 @@ void searchName(Book *b, int index){
         } 
     }
     if (found == 0){
-        printf("\n검색이 완료되었습니다.\n");
+        printf("\n\n검색이 완료되었습니다.\n");
         printf("\n해당 도서의 이름을 찾지 못했습니다.\n");
     }
 }
@@ -148,7 +148,7 @@ void searchAuthor(Book *b, int index){
         Book *book = b + i;
         char *foundName = strstr(book->auth, goalauthor);
         if(foundName!=0){
-            printf("\n검색이 완료되었습니다.\n");
+            printf("\n\n검색이 완료되었습니다.\n");
             printf("%-12s\t%-12s\t%-8s\t%s\t\t%s\n", "이름", "저자", "장르", "대출일", "대출 가능");
             printf("%-12s\t%-12s\t%-8s\t%-10s\t", book->name, book->auth, book->genre, book->borrDate);
 			printf("%s\n", book->borrAble?"대출 불가능":"대출 가능");
@@ -157,7 +157,7 @@ void searchAuthor(Book *b, int index){
         } 
     }
     if (found == 0){
-        printf("\n검색이 완료되었습니다.\n");
+        printf("\n\n검색이 완료되었습니다.\n");
         printf("\n해당 도서의 저자을 찾지 못했습니다.\n");
     }
 }
@@ -172,7 +172,7 @@ void searchGenre(Book *b, int index){
         Book *book = b + i;
         char *foundName = strstr(book->genre, goalname);
         if(foundName!=0){
-            printf("\n검색이 완료되었습니다.\n");
+            printf("\n\n검색이 완료되었습니다.\n");
             printf("%-12s\t%-12s\t%-8s\t%s\t\t%s\n", "이름", "저자", "장르", "대출일", "대출 가능");
             printf("%-12s\t%-12s\t%-8s\t%-10s\t", book->name, book->auth, book->genre, book->borrDate);
 			printf("%s\n", book->borrAble?"대출 불가능":"대출 가능");
@@ -181,7 +181,7 @@ void searchGenre(Book *b, int index){
         } 
     }
     if (found == 0){
-        printf("\n검색이 완료되었습니다.\n");
+        printf("\n\n검색이 완료되었습니다.\n");
         printf("\n해당 도서의 장르을 찾지 못했습니다.\n");
     }
 }
